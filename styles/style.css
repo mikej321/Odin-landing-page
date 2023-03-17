@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Sono:wght@400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    --dark-bg-color: #1F2937;
+    --color-2: #F9FAF8;
+    --color-3: #E5E7EB;
+    --button-color-4: #3882F6;
+    --font-serif: 'Labrada', serif;
+    --font-sans: 'Sono', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
