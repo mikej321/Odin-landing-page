@@ -10,10 +10,11 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    --dark-bg-color: #1F2937;
+    --lighter-bg-color: #1b3867;
+    --dark-bg-color: #1c2025;
     --color-2: #F9FAF8;
     --color-3: #E5E7EB;
-    --button-color-4: #3882F6;
+    --button-color-4: #BF5910;
     --font-serif: 'Labrada', serif;
     --font-sans: 'Source Sans Pro', sans-serif;
 }
@@ -34,20 +35,21 @@ img {
 }
 
 header {
-    background: local no-repeat linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/craft10.jpg);
+    background: local no-repeat linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/craft10.jpg);
     background-size: cover;
     background-position: 25% 30%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 1rem 20rem 7rem;
+    padding: 1rem 5rem;
+    gap: 15rem;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .header p {
@@ -58,7 +60,7 @@ header {
 
 ul {
     display: flex;
-    gap: 2rem;
+    gap: 15rem;
 }
 
 ul a {
@@ -67,30 +69,26 @@ ul a {
     font-size: 1.6rem;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10rem;
-    
-}
+
 
 .header-left-info {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 1rem;
+    margin-top: 10rem;
+    align-items: center;
+    text-align: center;
 }
 
 .header-left-info h1 {
     color: var(--color-2);
-    font-size: 48px;
-    max-width: 60rem;
+    letter-spacing: 6px;
 }
 
 .header-left-info > p {
     color: var(--color-3);
-    font-size: 1.8rem;
-    max-width: 46rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 3.5rem;
     margin-bottom: 3rem;
 }
 
@@ -100,12 +98,14 @@ button {
     background-color: var(--button-color-4);
     border: none;
     color: var(--color-2);
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 1rem;
     border-radius: 12px;
     font-family: var(--font-serif);
     font-weight: bold;
-    min-width: 21rem;
+    min-width: 25rem;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .button-container {
@@ -120,5 +120,110 @@ button {
 .button-container > button:nth-child(2) {
 
 }
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section {
+    padding: 5rem 5rem 15rem 5rem;
+    max-width: 125rem;
+}
+
+.first-section h2 {
+    margin-bottom: 5rem;
+}
+
+.card-container {
+    display: flex;
+    gap: 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card img {
+    min-width: 25rem;
+    height: 25rem;
+}
+
+.card > p {
+
+}
+
+.quote-container {
+    background-color: var(--color-3);
+    display: flex;
+    flex-direction: column;
+    padding: 32rem;
+}
+
+.quote-container blockquote {
+    font-style: italic;
+}
+
+blockquote p {
+    font-size: 4rem;
+    font-weight: 200;
+    text-align: left;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+figcaption {
+    font-size: 2rem;
+    align-self: end;
+    margin-right: 3rem;
+}
+
+.third-section {
+    padding: 32rem;
+}
+
+.action-container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border: 1px solid black;
+    padding: 4rem 10rem;
+    gap: 15rem;
+    background-color: var(--lighter-bg-color);
+    color: white;
+}
+
+.action-left-info {
+    font-size: 2.2rem;
+}
+
+.action-container > button {
+    min-width: 20rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    background-color: var(--dark-bg-color);
+    color: var(--color-3);
+}
+
+footer p {
+
+}
+
 
 
